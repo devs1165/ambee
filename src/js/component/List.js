@@ -2,7 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 import store from '../store';
 import { setListData } from '../actions/DashboardAction';
-//import Listitem from './ListItem';
 import GoogleMapReact from 'google-map-react';
 
 
