@@ -1,0 +1,100 @@
+.add-button{
+	float: right;
+	height:30px;
+	width: 150px;
+	background-color: grey;
+	border:1px solid grey;
+	color:white;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.taglist-main-container{
+	height: 100px;
+	width: 700px;
+
+	margin-top: 15px;
+}
+.taglist-header-container{
+	display: table;
+	height: 100px;
+	width: 100%;
+}
+.taglist-tag-button-container{
+	display: table-cell;
+	height: 100%;
+	width: 70%;
+	background-color: black;
+	color:white;
+	vertical-align: middle;
+	font-size: 28px;
+	font-weight: bold;
+	padding-left: 5%;
+	cursor: pointer;
+}
+.taglist-remove-button-container{
+	display: table-cell;
+	height: 100%;
+	width: 30%;
+	background-color: red;
+	color:white;
+	vertical-align: middle;
+	text-align: center;
+	font-weight: bold;
+	font-size: 28px;
+	cursor: pointer;
+}
+.taglist-body-container{
+	height: 300px;
+	width: 696px;
+	border-right:2px solid lightgrey; 
+	border-left:2px solid lightgrey;
+	border-bottom:2px solid lightgrey;
+}
+.taglist-body-wrapper{
+	height: 100%;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	padding-top: 3%;
+}
+.tag-title-container{
+	height: 30%;
+	width: 99%;
+	border:2px solid lightgrey;
+}
+.tag-title-input{
+	height: 92%;
+	width: 99%;
+	outline: none;
+	border:none;
+	font-weight: bold;
+	font-size: 20px;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+.tag-title-input:focus{
+	outline: none;
+	border:none;
+}
+.tag-text-container{
+	height: 50%;
+	width: 99%;
+	margin-top: 3%;
+	border:2px solid lightgrey; 
+}
+.tag-text-input{
+	height: 94%;
+	width: 99%;
+	outline: none;
+	border:none;
+	font-weight: bold;
+	font-size: 20px;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+.tag-text-input:focus{
+	outline: none;
+	border:none;
+
+}

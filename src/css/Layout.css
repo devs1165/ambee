@@ -1,0 +1,40 @@
+#map {
+	height: 100%;
+}
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.layout-main-container{
+	/*background-color: yellow;*/
+}
+
+.list-main-container{
+	display: table;
+	height: 50px;
+	width: 100%;
+	border:1px solid lightgrey;
+	border-radius: 2px;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+
+.name-container{
+	display: table-cell;
+	height: 100%;
+	line-height: 50px;
+	padding-left: 20px;
+	width: 50%;
+	font-size: 15px;
+	text-transform: capitalize;
+}
+.discp-container{
+	display: table-cell;
+	height: 100%;
+	line-height: 50px;
+	padding-left: 20px;
+	font-size: 15px;
+	text-transform: capitalize;
+}
