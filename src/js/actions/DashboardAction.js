@@ -7,7 +7,7 @@ export function setListData(taglist){
 				type : "REMOVE_LIST",
 				payload: x
 			})
-		}, 1000);
+		}, 2000);
 	}	
 }
 
