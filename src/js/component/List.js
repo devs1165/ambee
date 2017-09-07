@@ -13,7 +13,7 @@ class List extends React.Component{
 		this.state = {
 			color:'green',
 			banColor:'green',
-			val:'',
+			val:'0',
 			center: {
 				lat: 21.7679,
 				lng: 78.8718
@@ -74,7 +74,11 @@ class List extends React.Component{
 	  left: -MARKER_SIZE / 2,
 	  top: -MARKER_SIZE / 2,
 	  backgroundColor:this.state.color,
-	  borderRadius:'50%'
+	  borderRadius:'50%',
+	  fontSize:'22px',
+	  color:'white',
+	  lineHeight:'40px',
+	  textAlign:'center'
 
 	};
 	const banStyle = {
@@ -84,7 +88,11 @@ class List extends React.Component{
 	  left: -MARKER_SIZE / 2,
 	  top: -MARKER_SIZE / 2,
 	  backgroundColor:this.state.banColor,
-	  borderRadius:'50%'
+	  borderRadius:'50%',
+	  fontSize:'22px',
+	  color:'white',
+	  lineHeight:'40px',
+	  textAlign:'center'
 
 	}
 	const DelhiComponent = ({ text }) => <div style={greatPlaceStyle}>{text}</div>;
@@ -99,12 +107,12 @@ class List extends React.Component{
 				      <DelhiComponent
 		                lat={28.7041}
 		                lng={77.1025}
-		                text={'greatPlaceStyle'}
+		                text={this.state.val}
 		             />
 		              <BangComponent
 		                lat={12.9716}
 		                lng={77.5946}
-		                text={'greatPlaceStyle'}
+		                text={this.state.val}
 		             />
 
 			      
