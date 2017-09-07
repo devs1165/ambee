@@ -2,7 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 import store from '../store';
 import { setListData } from '../actions/DashboardAction';
-import Listitem from './ListItem';
 import GoogleMapReact from 'google-map-react';
 
 
@@ -14,7 +13,7 @@ class List extends React.Component{
 		this.state = {
 			color:'green',
 			banColor:'green',
-
+			val:'',
 			center: {
 				lat: 21.7679,
 				lng: 78.8718
@@ -34,24 +33,29 @@ class List extends React.Component{
 
 
 		if (this.props.list !== nextProps.list) {
+
 			store.dispatch(setListData());
-			if (nextProps.list <= 10 && nextProps.list<=200) {
+			if (nextProps.list <= 0 && nextProps.list<=4) {
 				this.setState({
 					color:'green',
-					banColor:'yellow'
-
+					banColor:'yellow',
+					val:nextProps.list
 				})
 			}
-			else if (nextProps.list >= 200 && nextProps.list <= 500) {
+			else if (nextProps.list > 4 && nextProps.list <= 8) {
 				this.setState({
 					color:'yellow',
-					banColor:'blue'
+					banColor:'blue',
+					val:nextProps.list
+
 				})	
 			}
-			else if (nextProps.list >= 500 && nextProps.list<=700) {
+			else if (nextProps.list > 8 && nextProps.list<=10) {
 				this.setState({
 					color:'red',
-					banColor:'green'
+					banColor:'green',
+					val:nextProps.list
+
 
 				})	
 			}
